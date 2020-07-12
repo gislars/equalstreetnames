@@ -12,7 +12,7 @@ export default function (map: Map): void {
   map.addSource("geojson-ways", {
     type: "geojson",
     attribution,
-    data: "/ways.geojson",
+    data: "../ways.geojson",
   });
 
   map.addLayer({

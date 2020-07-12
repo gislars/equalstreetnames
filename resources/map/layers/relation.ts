@@ -12,7 +12,7 @@ export default function (map: Map): void {
   map.addSource("geojson-relations", {
     type: "geojson",
     attribution,
-    data: "/relations.geojson",
+    data: "../relations.geojson",
   });
 
   map.addLayer({

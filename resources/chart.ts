@@ -93,7 +93,7 @@ export default function (element: HTMLCanvasElement): void {
   elementCanvas = element;
   elementDiv = elementCanvas.parentElement as HTMLDivElement;
 
-  fetch("/statistics.json")
+  fetch("../statistics.json")
     .then((response: Response) => response.json())
     .then((statistics) => {
       const count = {
