@@ -13,7 +13,7 @@
     "build:brussels": "parcel build cities/brussels/html/index.html cities/brussels/html/*/index.html --global app --out-dir dist/brussels --no-source-maps",
     "build:gent": "parcel build cities/gent/html/index.html cities/gent/html/*/index.html --global app --out-dir dist/gent --no-source-maps",
     "build:leuven": "parcel build cities/leuven/html/index.html cities/leuven/html/*/index.html --global app --out-dir dist/leuven --no-source-maps",
-    "build:berlin": "parcel build cities/berlin/html/index.html cities/berlin/html/*/index.html --global app --out-dir dist/berlin --no-source-maps --public-url https://umap.openstreetmap.de/equalstreetnames-berlin/",
+    "build:berlin": "parcel build cities/berlin/html/index.html cities/berlin/html/*/index.html --global app --out-dir dist/berlin --no-source-maps",
     "serve:assen": "parcel serve cities/assen/html/index.html cities/assen/html/*/index.html --global app --out-dir dist/assen",
     "serve:belgrade": "parcel serve cities/belgrade/html/index.html cities/belgrade/html/*/index.html --global app --out-dir dist/belgrade",
     "serve:brugge": "parcel serve cities/brugge/html/index.html cities/brugge/html/*/index.html --global app --out-dir dist/brugge",
@@ -34,12 +34,12 @@
   "devDependencies": {
     "@babel/core": "^7.10.4",
     "@types/chart.js": "^2.9.22",
-    "@types/mapbox-gl": "^1.11.0",
+    "@types/mapbox-gl": "^1.11.1",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-static-files-copy": "^2.4.3",
-    "sass": "^1.26.9",
+    "sass": "^1.26.10",
     "typescript": "^3.9.6"
   },
   "dependencies": {
@@ -48,7 +48,7 @@
     "bootstrap": "^4.5.0",
     "chart.js": "^2.9.3",
     "jquery": "^3.5.1",
-    "mapbox-gl": "^1.11.0",
+    "mapbox-gl": "^1.11.1",
     "popper.js": "^1.16.1"
   },
   "staticFiles": {
