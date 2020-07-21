@@ -1,14 +1,14 @@
 "use strict";
 
 const colors: Record<string, string> = {
-  f: "#800080", // female (cis)
-  m: "#C8C800", // male (cis)
-  fx: "#00a050", // female (transgender)
-  mx: "#00a050", // male (transgender)
-  x: "#00a050", // intersex
-  u: "#808080", // unknown
-  p: "#A46440", // multiple
-  o: "#DDDDDD", // other (not a person or multiple)
+  f: "#f46d43", // female (cis)
+  m: "#fee090", // male (cis)
+  fx: "#74add1", // female (transgender)
+  mx: "#91bfdb", // male (transgender)
+  x: "#abd9e9", // intersex
+  u: "#d94801", // unknown
+  p: "#74add1", // multiple
+  o: "#fff5eb", // other (not a person or multiple)
 };
 
 export default colors;
