@@ -8,7 +8,7 @@ const colors: Record<string, string> = {
   x: "#abd9e9", // intersex
   u: "#d94801", // unknown
   p: "#74add1", // multiple
-  o: "#fff5eb", // other (not a person or multiple)
+  o: "#555555", // other (not a person or multiple)
 };
 
 export default colors;
