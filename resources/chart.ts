@@ -84,7 +84,7 @@ function updateLabels(count: {
     count.f + count.m + count.fx + count.mx + count.x + count.p;
   const total = totalPerson + count.o;
 
-  ["f", "m", "fx", "mx"].forEach((gender: string) => {
+  ["f", "m", "fx", "mx", "x", "p", "u"].forEach((gender: string) => {
     updateLabel(gender, count[gender], totalPerson);
   });
 }
