@@ -9,6 +9,7 @@ interface Property {
   wikidata: string | null;
   etymology: string | null;
   details?: string;
+  osmid: number;
 }
 
 export default function (
@@ -19,12 +20,13 @@ export default function (
   const properties = features[0].properties as Property;
 
   const streetname = getStreetname(properties);
+  const osmid = features[0].id;
   const details =
     typeof properties.details !== "undefined" && properties.details !== null
       ? JSON.parse(properties.details)
       : null;
 
-  const html = popupContent(streetname, details);
+  const html = popupContent(streetname, details, osmid);
 
   new mapboxgl.Popup({ maxWidth: "none" })
     .setLngLat(lnglat)

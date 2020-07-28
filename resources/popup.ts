@@ -17,7 +17,8 @@ export default function (
   details:
     | Record<string, string | number | boolean>
     | Record<string, string | number | boolean>[]
-    | null
+    | null,
+  osmid: number,
 ): string {
   let html = "";
 
@@ -31,7 +32,7 @@ export default function (
     }
   }
 
-  return html + `<div class="popup-streetname">${streetname}</div>`;
+  return html + `<div class="popup-streetname"><a target="_blank" href="https://www.openstreetmap.org/way/${osmid}">${streetname}</a></div>`;
 }
 
 function popupDetails(
